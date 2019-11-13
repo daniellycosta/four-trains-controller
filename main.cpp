@@ -1,16 +1,6 @@
 //
-//  threadTrem.cpp
+//  main.cpp
 //
-//
-//  Created by Affonso on 25/10/16.
-//
-//
-
-// http: pubs.opengroup.org/onlinepubs/7908799/xsh/pthread_mutex_init.html
-
-// Programa que sincroniza threads utilizando-se mutexes
-// Para compilá-lo utilise: g++ -o threadTrem threadTrem.cpp -lpthread
-
 //   Os trens circulam em sentido horário entre os trilhos
 
 //   + - - - 1 - - - + - - - 2 - - - + - - - 3 - - - +
@@ -295,7 +285,7 @@ int main()
     exit(EXIT_FAILURE);
   }
 
-  //------ Thread 4 (executa a fn: trem 3) ------
+  //------ Thread 4 (executa a fn: trem 4) ------
   res = pthread_create(&thread4, NULL, trem4, NULL);
   if (res != 0)
   {
